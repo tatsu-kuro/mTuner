@@ -1,0 +1,323 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Syaku8Tuner.rc2""  // Microsoft Visual C++ 以外のツールで編集されたリソース\r\n"
+    "#include ""l.jpn\\afxres.rc""          // 標準のコンポーネント\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME_J MENU PRELOAD DISCARDABLE 
+BEGIN
+    MENUITEM "終了(&X)",                    ID_APP_EXIT
+    MENUITEM "About(&A)",                   ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME1 ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    VK_DOWN,        ID_DOWN,                VIRTKEY, NOINVERT
+    VK_ESCAPE,      ID_ESC,                 VIRTKEY, NOINVERT
+    VK_LEFT,        ID_HIDARI,              VIRTKEY, NOINVERT
+    VK_RETURN,      ID_RETURN,              VIRTKEY, NOINVERT
+    VK_RETURN,      ID_SHIFTRETURN,         VIRTKEY, SHIFT, NOINVERT
+    VK_RIGHT,       ID_MIGI,                VIRTKEY, NOINVERT
+    VK_UP,          ID_UP,                  VIRTKEY, NOINVERT
+END
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    VK_DOWN,        ID_DOWN,                VIRTKEY, NOINVERT
+    VK_LEFT,        ID_HIDARI,              VIRTKEY, NOINVERT
+    VK_RETURN,      ID_RETURN,              VIRTKEY, NOINVERT
+    VK_RETURN,      ID_SHIFTRETURN,         VIRTKEY, SHIFT, NOINVERT
+    VK_RIGHT,       ID_MIGI,                VIRTKEY, NOINVERT
+    VK_UP,          ID_UP,                  VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX_J DIALOG DISCARDABLE  0, 0, 175, 127
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "尺八調律チューナー / www.shaku6.com"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,120,108,50,14,WS_GROUP
+    LTEXT           "www.shaku6.com",IDC_STATIC,15,111,94,13,SS_NOPREFIX
+    LTEXT           "STOPボタン、 Enterキー で測定を停止、再開します。\nShift+Enter で記録データをクリアします。",
+                    IDC_STATIC,8,31,163,23
+    LTEXT           "５０００個（５００秒）のデータを記録できます。５０００個を超えると古いデータから消えていきます。",
+                    IDC_STATIC,8,7,160,19
+    LTEXT           "測定をSTOPすると、左クリック、マウスホイール、上下左右キー、下部横スライドバーで記録データを選択、閲覧できます。",
+                    IDC_STATIC,8,60,160,29
+    LTEXT           "2019年3月17日　by たつあき",IDC_STATIC,15,95,94,13,
+                    SS_NOPREFIX
+END
+
+IDD_CALIBRATE_J DIALOG DISCARDABLE  1, 185, 245, 91
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "周波数測定の校正"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,188,69,50,15
+    PUSHBUTTON      "４４０Hzへ校正",IDC_CALI_CALI,7,27,60,15
+    LTEXT           "Cent値が 00 からずれているなら、[４４０Ｈｚへ校正] を押してください。マウスホイールでも調整できます。",
+                    IDC_STATIC,70,26,168,17
+    LTEXT           "４４０Hz(ラ)の音を出しています。拾えていなければ、出力音量およびサウンド入力を調整してください。",
+                    IDC_STATIC,7,4,215,16
+    PUSHBUTTON      "校正をリセット",IDC_RESETCALI,7,50,60,15
+    LTEXT           "ズレがなければ「校正をリセット」してください。Windows7,8ではずれは無いようです。",
+                    IDC_STATIC,70,49,168,17
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX_J, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 168
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_CALIBRATE_J, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 238
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 84
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP              BITMAP  DISCARDABLE     "res\\bitmape.bmp"
+IDB_START               BITMAP  DISCARDABLE     "res\\up2.bmp"
+IDB_STOP                BITMAP  DISCARDABLE     "res\\bmp00003.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON    DISCARDABLE     "res\\mtuner.ico"
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英語 (ｱﾒﾘｶ) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME_E MENU PRELOAD DISCARDABLE 
+BEGIN
+    MENUITEM "Exit(&X)",                    ID_APP_EXIT
+    MENUITEM "About(&A)",                   ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX_E DIALOG DISCARDABLE  0, 0, 174, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Shakuhachi tuning meter"
+FONT 10, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,78,38,14,WS_GROUP
+    LTEXT           "Mouse click and wheel , Enter , Up , Down , Right and Left  keys are available.",
+                    IDC_STATIC,13,26,155,19
+    LTEXT           "2019/03/17 ,Tatsuaki Kuroda",IDC_STATIC,12,68,98,10,
+                    SS_NOPREFIX
+    LTEXT           "5000 notes can be recorded. Overflowed Old data woud disappear.",
+                    IDC_STATIC,13,6,155,18
+    LTEXT           "Shift+Enter : clear all data.",IDC_STATIC,13,50,155,11
+    LTEXT           "www.shaku6.com",IDC_STATIC,12,82,98,10,SS_NOPREFIX
+END
+
+IDD_SYAKU8TUNER_FORM DIALOGEX 0, 0, 442, 137
+STYLE DS_CONTROL | WS_CHILD
+FONT 9, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "START/STOP",IDC_STOP,185,77,47,21,BS_BITMAP | NOT 
+                    WS_TABSTOP,0,HIDC_STOP
+    CONTROL         "",IDC_INABC,"Static",SS_BITMAP,154,84,13,14
+    CONTROL         "",IDC_HERZ,"Static",SS_BITMAP,122,84,13,14
+    CONTROL         "",IDC_WAVE,"Static",SS_BITMAP,95,84,13,14
+    CONTROL         "",IDC_CNT,"Static",SS_BITMAP,245,84,13,14
+    CONTROL         "Spin1",IDC_SPIN440,"msctls_updown32",UDS_ARROWKEYS,42,
+                    76,10,22
+    CONTROL         "",IDC_A440BIT,"Static",SS_BITMAP,28,84,13,14
+END
+
+IDD_CALIBRATE_E DIALOG DISCARDABLE  1, 170, 231, 49
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Calibration by A(440Hz)"
+FONT 10, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,175,30,50,15
+    PUSHBUTTON      "Calibrate with A",IDC_CALI_CALI,5,10,60,15
+    LTEXT           "If detected frequency woudn't be 440hz, push the left [Calibrate with A] button.",
+                    IDC_STATIC,70,9,158,17
+    PUSHBUTTON      "Reset Calibration",IDC_RESETCALI,5,30,60,15
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX_E, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 167
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_SYAKU8TUNER_FORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+
+    IDD_CALIBRATE_E, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 英語 (ｱﾒﾘｶ) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE 17, 1
+#pragma code_page(932)
+#endif //_WIN32
+#include "res\Syaku8Tuner.rc2"  // Microsoft Visual C++ 以外のツールで編集されたリソース
+#include "l.jpn\afxres.rc"          // 標準のコンポーネント
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

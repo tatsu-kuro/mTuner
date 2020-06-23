@@ -1,0 +1,4 @@
+// Microsoft Developer Studio generated Help ID include file.
+// Used by Syaku8Tuner.rc
+//
+#define HIDC_STOP                       0x806503f5    // IDD_SYAKU8TUNER_FORM
