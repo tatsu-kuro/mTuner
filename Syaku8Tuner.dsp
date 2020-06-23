@@ -53,7 +53,7 @@ BSC32=bscmake.exe
 # ADD BSC32 /nologo
 LINK32=link.exe
 # ADD BASE LINK32 /nologo /subsystem:windows /machine:I386
-# ADD LINK32 winmm.lib /nologo /subsystem:windows /machine:I386 /out:"Release/mTuner.exe"
+# ADD LINK32 winmm.lib /nologo /subsystem:windows /machine:I386 /out:"Release/msTuner.exe"
 
 !ELSEIF  "$(CFG)" == "Syaku8Tuner - Win32 Debug"
 

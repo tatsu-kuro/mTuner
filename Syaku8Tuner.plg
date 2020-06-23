@@ -1,0 +1,52 @@
+<html>
+<body>
+<pre>
+<h1>ﾋﾞﾙﾄﾞのﾛｸﾞ</h1>
+<h3>
+--------------------構成: Syaku8Tuner - Win32 Release--------------------
+</h3>
+<h3>ｺﾏﾝﾄﾞ ﾗｲﾝ</h3>
+一時ﾌｧｲﾙ "C:\Users\tatsu\AppData\Local\Temp\RSP1E27.tmp" を作成し、次の内容を記録します
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/Syaku8Tuner.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Users\tatsu\source\repos\mTuner\Disp5zure.cpp"
+"C:\Users\tatsu\source\repos\mTuner\FFT.CPP"
+"C:\Users\tatsu\source\repos\mTuner\IniData.cpp"
+"C:\Users\tatsu\source\repos\mTuner\Syaku8Tuner.cpp"
+"C:\Users\tatsu\source\repos\mTuner\Syaku8TunerView.cpp"
+"C:\Users\tatsu\source\repos\mTuner\WaveIn.cpp"
+]
+Creating command line "cl.exe @C:\Users\tatsu\AppData\Local\Temp\RSP1E27.tmp" 
+一時ﾌｧｲﾙ "C:\Users\tatsu\AppData\Local\Temp\RSP1E28.tmp" を作成し、次の内容を記録します
+[
+winmm.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/msTuner.pdb" /machine:I386 /out:"Release/msTuner.exe" 
+.\Release\Disp5zure.obj
+.\Release\FFT.OBJ
+.\Release\IniData.obj
+.\Release\MainFrm.obj
+.\Release\StdAfx.obj
+.\Release\Syaku8Tuner.obj
+.\Release\Syaku8TunerDoc.obj
+.\Release\Syaku8TunerView.obj
+.\Release\WaveIn.obj
+.\Release\Syaku8Tuner.res
+]
+ｺﾏﾝﾄﾞ ﾗｲﾝ "link.exe @C:\Users\tatsu\AppData\Local\Temp\RSP1E28.tmp" の作成中
+<h3>ｱｳﾄﾌﾟｯﾄ ｳｨﾝﾄﾞｳ</h3>
+ｺﾝﾊﾟｲﾙ中...
+Disp5zure.cpp
+FFT.CPP
+IniData.cpp
+Syaku8Tuner.cpp
+Syaku8TunerView.cpp
+WaveIn.cpp
+ｺｰﾄﾞを生成中...
+ﾘﾝｸ中...
+
+
+
+<h3>結果</h3>
+msTuner.exe - ｴﾗｰ 0、警告 0
+</pre>
+</body>
+</html>

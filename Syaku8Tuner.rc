@@ -186,6 +186,52 @@ IDB_STOP                BITMAP  DISCARDABLE     "res\\bmp00003.bmp"
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
 IDI_ICON                ICON    DISCARDABLE     "res\\mtuner.ico"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "ent\0"
+            VALUE "FileDescription", "msTuner\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "msTuner\0"
+            VALUE "LegalCopyright", "Copyright (C) 2019\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "msTuner.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "msTuner\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+#endif    // !_MAC
+
 #endif    // “ú–{Œê resources
 /////////////////////////////////////////////////////////////////////////////
 
@@ -218,7 +264,7 @@ END
 
 IDD_ABOUTBOX_E DIALOG DISCARDABLE  0, 0, 174, 98
 STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "Shakuhachi tuning meter"
+CAPTION "msTuner(making shakuhachi tuner)"
 FONT 10, "MS Sans Serif"
 BEGIN
     DEFPUSHBUTTON   "OK",IDOK,130,78,38,14,WS_GROUP
